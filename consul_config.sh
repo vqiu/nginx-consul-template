@@ -4,7 +4,7 @@
 # Requires: jq - a lightweight and flexible command-line JSON processor - installed on system.
 
 # settings
-CONFIG_JSON=${CONFIG_JSON:-/config.json}
+CONFIG_JSON=${CONFIG_JSON:-./config.json}
 CONFIG=$(cat ${CONFIG_JSON})
 CONSUL_KV_PREFIX=${CONSUL_KV_PREFIX:-nginx}
 CONSUL_PORT_8500_TCP_ADDR=${CONSUL_PORT_8500_TCP_ADDR:-127.0.0.1}
